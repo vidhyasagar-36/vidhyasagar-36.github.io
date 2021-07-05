@@ -1,0 +1,236 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#navbar {
+    background-color: transparent; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1000;
+}
+  
+/* Style the navbar links */
+#navbar_text a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+  
+#navbar_text a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+@media only screen and (max-device-width: 1366px) {
+    .profile-image {
+      background-attachment: scroll;
+    }
+}
+  
+.profile-image {
+    /* The image used */
+    background-image: url("photos/profpicfinal.jpg");
+  
+    /* full height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.intro {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+  
+.intro::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: black;
+    position: fixed;
+    left: -125px;
+    top: 65%;
+}
+  
+.intro::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: black;
+    position: fixed;
+    left: 320px;
+    top: 65%;
+}
+  
+.header {
+    text-align: center;
+    left: 50%;
+    color: black;
+}
+.bg {
+    background-image: url("photos/bgforhtml.jpg");
+}     
+
+.journey {
+    text-align:center;
+}
+
+.journey_photo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 60%;
+    left: 40%;
+}
+
+.header{
+    color: black;
+}
+
+.journey_content {
+    text-align:left;
+    position:absolute;
+    top: 750px;
+    left: 50%;
+    width: 500px;
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 800ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.carousel_button-left {
+    background: transparent;
+    left: -40px;
+}
+
+.carousel_button-right {
+    background: transparent;
+    right: -70px;
+}
+.carousel_button img {
+    width: 20px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current_slide {
+    background: gray;
+}
+
+.ishidden {
+    display: none;
+}
+
+.carousel_caption {
+    text-align: center;
+    position:relative;
+    top: -100px;
+}
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color:blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav {
+    padding-top: 50px;
+}
+
+.social_media-button {
+    background: transparent;
+    border-radius: 50px;
+}
+
+
+
+
+

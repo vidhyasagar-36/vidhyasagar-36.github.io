@@ -1,0 +1,126 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#navbar {
+    background-color: transparent; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1000;
+}
+  
+/* Style the navbar links */
+#navbar_text a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+  
+#navbar_text a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .profile-image {
+      background-attachment: scroll;
+    }
+}
+  
+.profile-image {
+    /* The image used */
+    background-image: url("photos/gamelife.jpg");
+  
+    /* full height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.intro {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.bg {
+    background-image: url("photos/gamebg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+.equipments {
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.equipment {
+    float:left;
+    padding: 15px;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.card_body {
+    background-color: white;
+    text-align: center;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#carouselExampleIndicators {
+    position: relative;
+    margin-left: 21%;
+    height: 500px;
+    width: 58%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
